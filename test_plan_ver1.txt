@@ -1,0 +1,70 @@
+Test Plan for ExpressVPN
+# First draft
+
+ID: 1
+Name: Installation and Launch Test
+Priority: High
+Severity: Critical
+Steps:
+    1. Install APK from Google Play Store: https://play.google.com/store/apps/details?id=com.expressvpn.vpn
+    2. Launch the application
+Expected Results:
+    1. APK installed
+    2. App launched, check if the first activity is correct. (Appium: appWaitActivity)
+
+ID: 2
+Name: Initial Setup Test
+Priority: High
+Severity: Critical
+Steps:
+    1. Launch the application after installation
+    2. Select Free Trial
+    3. Input E-mail for free trial
+
+Expected Results:
+    1. User can select "Start Free Trial" or Sign in
+    2. An editText element shown, for user to input e-mail
+    3. A new account is created and the user is able to use the free trial VPN for 7 days
+
+ID: 3
+Name: Basic VPN Connection Funcitionality Test
+Priority: High
+Severity: Critical
+Steps:
+    1. Launch the application and navigate to the main activity(the one with the 'connect' button)
+    2. Press the connect button
+Expected Results:
+    1. Main activity is shown
+    2. VPN connection established -> Show 'Connected' message
+       VPN connection failed -> Show 'Connection Fail' message
+
+ID: 4
+Name: VPN Connection in background Test
+Priority: High
+Severity: Critical
+Steps:
+    1. Launch the application and navigate to the main activity(the one with the 'connect' button)
+    2. Press the connect button
+    3. Wait for the connection to be established
+    4. Put to appliction to background
+Expected Results:
+    1. Main activity is shown
+    2. Connecting to the server
+    3. Connection established
+    4. The device is still connected to the server. (With a vpn icon on top of the screen)
+
+ID: 5
+Name: Settings User Data Test
+Priority: Medium
+Severity: High
+Steps:
+    1. Launch the application and navigate to the Settings activity
+    2. Modify several settings
+    3. Close the application (remove in the background)
+    4. Relaunch the application, and check the settings status
+Expected Results:
+    1. Settings activity is shown
+    2. Application settings are changed immediately
+    3. Applciation shutdown
+    4. Settings are modified 
+
