@@ -1,6 +1,6 @@
 # Test Plan for ExpressVPN
 
-> Strongly recommend to view this testplan at: https://hackmd.io/@ndshen/SkTz_GlbP#VPN-Functionality
+> Strongly recommend to view this testplan at: https://hackmd.io/@ndshen/SkTz_GlbP
 
 To test the app compatibility on different version of Android, all of the tests below should be run on at least one device of the lowest available API level(mentioned in Gradle) to the device of the highest availabe API level.
 
