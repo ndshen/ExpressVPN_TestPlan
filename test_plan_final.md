@@ -7,7 +7,7 @@ To test the app compatibility on different version of Android, all of the tests 
 **Name**: Installation and Launch Test   
 **Priority**: <span style="color: red">High</span>  
 **Severity**: <span style="color: red">Critical </span>  
-# | Step | Expected Result
+\#| Step | Expected Result
 -- | ------| ----------------
 1 | Install APK from Google Play Store: https://play.google.com/store/apps/details?id=com.expressvpn.vpn |APK instatlled
 2 | Launch the application | App launched, check if the first activity is correct. (Appium: appWaitActivity)   
@@ -18,7 +18,7 @@ To test the app compatibility on different version of Android, all of the tests 
 **Name**: Initial Setup Test   
 **Priority**: <span style="color: red">High</span>  
 **Severity**: <span style="color: red">Critical </span>  
-# | Step | Expected Result
+\#| Step | Expected Result
 -- | ------| ----------------
 1 | Launch the application after installation | User can select "Start Free Trial" or Sign in
 2 | Select Free Trial | An editText element shown, for user to input e-mail
@@ -30,7 +30,7 @@ To test the app compatibility on different version of Android, all of the tests 
 **Name**: Basic VPN Connection  Funcitionality Test   
 **Priority**: <span style="color: red">High</span>  
 **Severity**: <span style="color: red">Critical </span>  
-# | Step | Expected Result
+\#| Step | Expected Result
 -- | ------| ----------------
 1 | Check the current IP address on the device | An IP address is recoreded
 2 | Launch the application and navigate to the main activity(the one with the 'connect' button) | Main activity is shown
@@ -43,7 +43,7 @@ To test the app compatibility on different version of Android, all of the tests 
 **Name**: VPN Connection in background Test   
 **Priority**: <span style="color: red">High</span>  
 **Severity**: <span style="color: orange">Critical </span>  
-# | Step | Expected Result
+\#| Step | Expected Result
 -- | ------| ----------------
 1 | Launch the application and navigate to the main activity(the one with the 'connect' button) | Main activity is shown
 2 | Press the connect button | Connecting to the server
@@ -56,7 +56,7 @@ To test the app compatibility on different version of Android, all of the tests 
 **Name**: Settings User Data Test     
 **Priority**: <span style="color: yellow">Medium</span>  
 **Severity**: <span style="color: orange">High</span>  
-# | Step | Expected Result
+\#| Step | Expected Result
 -- | ------| ----------------
 1 | Launch the application and navigate to the Settings activity | Settings activity is shown
 2 | Modify language settings to Japnanese | Application language changes to Japanese immediately
@@ -69,7 +69,7 @@ To test the app compatibility on different version of Android, all of the tests 
 **Name**: Internet connection fail before VPN connection   
 **Priority**: <span style="color: yellow">Medium</span>  
 **Severity**: <span style="color: yellow">Medium </span>  
-# | Step | Expected Result
+\#| Step | Expected Result
 -- | ------| ----------------
 1 | Launch the application and navigate to the main activity(the one with the 'connect' button) | Main activity is shown
 2 | Turn on the airplane mode on the phone | Shut down all the internet connection
@@ -82,7 +82,7 @@ To test the app compatibility on different version of Android, all of the tests 
 **Name**: Internet connection fail during VPN connection   
 **Priority**: <span style="color: yellow">Medium</span>  
 **Severity**: <span style="color: yellow">Medium </span>  
-# | Step | Expected Result
+\#| Step | Expected Result
 -- | ------| ----------------
 1 | Launch the application and navigate to the main activity(the one with the 'connect' button) | Main activity is shown
 2 | Press the 'Connect' button | VPN connection established
@@ -95,7 +95,7 @@ To test the app compatibility on different version of Android, all of the tests 
 **Name**: Free trial expire Test    
 **Priority**: <span style="color: yellow">Medium</span>  
 **Severity**: <span style="color: Orange">High </span>  
-# | Step | Expected Result
+\#| Step | Expected Result
 -- | ------| ----------------
 1 | Clear application user data and cache | The application is reset
 2 | Launch the app and login with a free trial account which is created 7 days ago | User cannot use the VPN, and an upgrade request is sent to the user
@@ -106,7 +106,7 @@ To test the app compatibility on different version of Android, all of the tests 
 **Name**: Free trial expire cheat Test    
 **Priority**: <span style="color: yellow">Medium</span>  
 **Severity**: <span style="color: red">Critical </span>  
-# | Step | Expected Result
+\#| Step | Expected Result
 -- | ------| ----------------
 1 | Clear application user data and cache | The application is reset
 2 | Change the device time setting to (current_date - 7 days)| The date setting of the device is changed 
@@ -118,7 +118,7 @@ To test the app compatibility on different version of Android, all of the tests 
 **Name**: Upgrade Account      
 **Priority**: <span style="color: yellow">Medium</span>  
 **Severity**: <span style="color: Orange">High </span>  
-# | Step | Expected Result
+\#| Step | Expected Result
 -- | ------| ----------------
 1 | Clear application user data and cache | The application is reset
 2 | Launch the app and login with an upgraded account | User should see the upgraded version of the app 
@@ -129,7 +129,7 @@ To test the app compatibility on different version of Android, all of the tests 
 **Name**: Back button navigation  
 **Priority**: <span style="color: yellow">Medium</span>  
 **Severity**: <span style="color: yellow">Medium </span>  
-# | Step | Expected Result
+\#| Step | Expected Result
 -- | ------| ----------------
 1 | Launch the application and navigate to the main activity | Main activity is shown
 2 | Navigate though 'Menu' -> 'Settings' -> 'Auto-connect' | Auto-connect setting page is shown
@@ -141,7 +141,7 @@ To test the app compatibility on different version of Android, all of the tests 
 **Name**: User Interface Visuality Check  
 **Priority**: <span style="color: green">Low</span>  
 **Severity**: <span style="color: green">Low </span>  
-# | Step | Expected Result
+\#| Step | Expected Result
 -- | ------| ----------------
 1 | Navigate though all the pages in the menu by Depth-First-Search method | All pages are shown in this test
 2 | At each page(Activity), check the visibility and existence of all the elements that should be in that page according to the spec | Nothing is visually broken
